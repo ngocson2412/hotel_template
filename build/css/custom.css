@@ -4236,7 +4236,7 @@ header {
 /** /NProgress **/
 /** bootstrap-wysiwyg **/
 .editor-wrapper {
-  min-height: 250px;
+  min-height: 500px;
   background-color: white;
   border-collapse: separate;
   border: 1px solid #cccccc;
