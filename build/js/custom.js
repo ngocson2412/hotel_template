@@ -4998,6 +4998,42 @@ function init_echarts() {
 
 }
 
+function upload(img) {
+    let fileData = img.files[0]
+    let math = ["image/png", "image/jpg", "image/jpeg"]
+    if($.inArray(fileData.type, math) === -1) {
+        alert("Please Choose image!!!")
+        $(img).val("");
+        return false;
+    }
+
+    if (img.files && fileData) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            let par = $(img).parent().parent().find("div.hotel-image .hotel-image-detail");
+            $(par).attr('src', e.target.result);
+        }
+        reader.readAsDataURL(fileData);
+    }
+}
+
+function upload_image() {
+    $(".hotel-image").bind("click", function() {
+        let image = $(this).parent().find('input[type="file"]');
+        $(image).click();
+        $(image).change(function (a) {
+            if ($(this).val() != '') {
+                upload(this);
+            }
+        });
+    })
+    $(".caption input").change(function (a) {
+        if ($(this).val() != '') {
+            upload(this);
+        }
+    });
+}
 
 $(document).ready(function () {
 
@@ -5035,5 +5071,5 @@ $(document).ready(function () {
     init_CustomNotification();
     init_autosize();
     init_autocomplete();
-
-});	
+    upload_image()
+});

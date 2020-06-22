@@ -1227,6 +1227,22 @@ table.no-margin .progress {
   .col-md-55 {
     width: 20%; } }
 
+.col-md-44 {
+  width: 366px;
+  margin-bottom: 10px; }
+
+@media (min-width: 768px) {
+  .col-md-44 {
+    width: 50%; } }
+
+@media (min-width: 992px) {
+  .col-md-44 {
+    width: 50%; } }
+
+@media (min-width: 1200px) {
+  .col-md-44 {
+    width: 25%; } }
+
 @media (min-width: 192px) and (max-width: 1270px) {
   table.tile_info span.right {
     margin-right: 7px;
@@ -1236,7 +1252,7 @@ table.no-margin .progress {
   margin: 0 auto;
   float: none !important; }
 
-.col-md-55, .col-xs-12, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-md-44, .col-md-55, .col-xs-12, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   float: left;
@@ -3712,7 +3728,7 @@ ul.project_files li a i {
 /* *********  /pricing  **************************** */
 /* *********  media gallery  **************************** */
 .thumbnail .image {
-  height: 120px;
+  height: 275px;
   overflow: hidden; }
 
 .caption {
@@ -3723,7 +3739,7 @@ ul.project_files li a i {
   margin-bottom: 5px; }
 
 .thumbnail {
-  height: 190px;
+  height: 350px;
   overflow: hidden; }
 
 .view {
@@ -3753,7 +3769,7 @@ ul.project_files li a i {
   font-size: 17px;
   padding: 3px;
   background: rgba(0, 0, 0, 0.35);
-  margin: 43px 0 0 0; }
+  margin: 242px 0 0 0; }
 
 .mask.no-caption .tools {
   margin: 90px 0 0 0; }
