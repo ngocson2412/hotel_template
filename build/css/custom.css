@@ -1228,12 +1228,12 @@ table.no-margin .progress {
     width: 20%; } }
 
 .col-md-44 {
-  width: 366px;
+  width: 100%;
   margin-bottom: 10px; }
 
 @media (min-width: 768px) {
   .col-md-44 {
-    width: 50%; } }
+    width: 100; } }
 
 @media (min-width: 992px) {
   .col-md-44 {
