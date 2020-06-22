@@ -1228,20 +1228,20 @@ table.no-margin .progress {
     width: 20%; } }
 
 .col-md-44 {
-  width: 403px;
+  width: 100%;
   margin-bottom: 10px; }
 
 @media (min-width: 768px) {
   .col-md-44 {
-    width: 403px; } }
+    width: 100; } }
 
 @media (min-width: 992px) {
   .col-md-44 {
-    width: 403px; } }
+    width: 50%; } }
 
 @media (min-width: 1200px) {
   .col-md-44 {
-    width: 403px; } }
+    width: 25%; } }
 
 @media (min-width: 192px) and (max-width: 1270px) {
   table.tile_info span.right {
