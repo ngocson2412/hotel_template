@@ -8,9 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>DataTables | Gentelella</title>
 
     <!-- Bootstrap -->
+    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -18,29 +19,18 @@
     <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- bootstrap-wysiwyg -->
-    <link href="../../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
-    <!-- Select2 -->
-    <link href="../../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
-    <!-- Switchery -->
-    <link href="../../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
-    <!-- starrr -->
-    <link href="../../vendors/starrr/dist/starrr.css" rel="stylesheet">
-    <!-- bootstrap-daterangepicker -->
-    <link href="../../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+
+    <link href="../../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="../../build/css/custom.min.css" rel="stylesheet">
-
-    <!-- css jquery ui -->
-    <link rel="stylesheet" href="../../vendors/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-
 </head>
 
 <body class="nav-md">
     <div class="container body">
         <div class="main_container">
-            <div class="col-md-3 left_col">
+            <div class="col-md-3 left_col menu_fixed">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
                         <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
@@ -255,50 +245,50 @@
                                 <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                                     <li class="nav-item">
                                         <a class="dropdown-item">
-                                            <span class="../image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span class="image"><img src="../images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                            <span>John Smith</span>
+                                            <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
-                            Film festivals used to be do-or-die moments for movie makers. They were where...
-                          </span>
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
                                             <span class="image"><img src="../images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                            <span>John Smith</span>
+                                            <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
-                            Film festivals used to be do-or-die moments for movie makers. They were where...
-                          </span>
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
                                             <span class="image"><img src="../images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                            <span>John Smith</span>
+                                            <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
-                            Film festivals used to be do-or-die moments for movie makers. They were where...
-                          </span>
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item">
                                             <span class="image"><img src="../images/img.jpg" alt="Profile Image" /></span>
                                             <span>
-                            <span>John Smith</span>
+                                            <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
-                            Film festivals used to be do-or-die moments for movie makers. They were where...
-                          </span>
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                            </span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -320,101 +310,99 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="">
-                    <div class="clearfix"></div>
                     <div class="row">
-                        <div class="col-md-1 "></div>
-                        <div class="col-md-10 ">
+                        <div class="col-md-6 col-sm-6">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Form Design </h2>
-
+                                    <h2>Add New User</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
                                     <br />
-                                    <form class="form-label-left input_mask">
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="First Name">
-                                            <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <input type="text" class="form-control" id="inputSuccess3" placeholder="Last Name">
-                                            <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
-                                        </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <div id="gender" class="btn-group" data-toggle="buttons">
-                                                <label class="btn btn-secondary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                                    <input type="radio" name="gender" value="male" class="join-btn"> &nbsp; Male &nbsp;
-                                                </label>
-                                                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                                    <input type="radio" name="gender" value="female" class="join-btn"> Female
-                                                </label>
+                                    <form class="form-horizontal form-label-left">
+                                        <div class="form-group row ">
+                                            <label class="control-label col-md-3 col-sm-3">Name<span class="required">*</span></label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <input type="text" class="form-control" placeholder="Name">
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <!-- <input type="text" id="datepicker" class="form-control datepicker" data-date-format="mm/dd/yyyy" id="inputSuccess5" placeholder="Date of birth"> -->
-                                            <input type="text" class="form-control has-feedback" id="single_cal1" placeholder="Date of birth">
-                                            <span class="fa glyphicon glyphicon-gift form-control-feedback right" aria-hidden="true"></span>
-
+                                        <div class="form-group row ">
+                                            <label class="control-label col-md-3 col-sm-3">User Number<span class="required">*</span></label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <input type="text" class="form-control" placeholder="User Number">
+                                            </div>
                                         </div>
-
-
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
-                                            <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                        <div class="form-group row ">
+                                            <label class="control-label col-md-3 col-sm-3">Phone<span class="required">*</span></label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <input type="text" class="form-control" placeholder="Phone">
+                                            </div>
                                         </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <input type="text" class="form-control" id="inputSuccess5" placeholder="Phone">
-                                            <span class="fa fa-phone form-control-feedback right" aria-hidden="true"></span>
-                                        </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Idfidend">
-                                            <span class="fa glyphicon glyphicon-user form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-
-                                        <div class="col-md-6 col-sm-6  form-group has-feedback">
-
-                                        </div>
-
-                                        <!-- <div class="clearfix"></div> -->
-
-                                        <div class="col-md-12 col-sm-12  form-group has-feedback">
-                                            <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Address">
-                                            <span class="fa glyphicon glyphicon-home form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-
-
-
-                                        <div class="col-md-12 col-sm-12  form-group has-feedback">
-                                            <textarea class="form-control" id="inputSuccess5" placeholder="Memo"></textarea>
-                                        </div>
-
-
-                                        <div class="ln_solid"></div>
                                         <div class="form-group row">
+                                            <label class="control-label col-md-3 col-sm-3">City</label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <select class="form-control">
+                                                    <option>Choose City</option>
+                                                    <option>Option one</option>
+                                                    <option>Option two</option>
+                                                    <option>Option three</option>
+                                                    <option>Option four</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3 col-sm-3">District</label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <select class="form-control">
+                                                    <option>Choose District</option>
+                                                    <option>Option one</option>
+                                                    <option>Option two</option>
+                                                    <option>Option three</option>
+                                                    <option>Option four</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3 col-sm-3 ">Address<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <textarea class="form-control" rows="2" placeholder="Address"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-3 col-sm-3 ">Description<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 ">
+                                                <textarea class="form-control" rows="4" placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="ln_solid"></div>
+                                        <div class="form-group">
                                             <div class="col-md-9 col-sm-9  offset-md-3">
                                                 <button type="button" class="btn btn-primary">Cancel</button>
-                                                <button class="btn btn-primary" type="reset">Reset</button>
-                                                <button class="btn btn-primary" type="reset">Set password</button>
+                                                <button type="reset" class="btn btn-primary">Reset</button>
                                                 <button type="submit" class="btn btn-success">Submit</button>
                                             </div>
                                         </div>
-
+                        
                                     </form>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-md-1 "></div>
                     </div>
-
                 </div>
             </div>
             <!-- /page content -->
@@ -438,40 +426,15 @@
     <script src="../../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../../vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../../vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../../vendors/moment/min/moment.min.js"></script>
-    <script src="../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-wysiwyg -->
-    <script src="../../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
-    <script src="../../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
-    <script src="../../vendors/google-code-prettify/src/prettify.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="../../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Switchery -->
-    <script src="../../vendors/switchery/dist/switchery.min.js"></script>
-    <!-- Select2 -->
-    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
-    <!-- Parsley -->
-    <script src="../../vendors/parsleyjs/dist/parsley.min.js"></script>
-    <!-- Autosize -->
-    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
-    <!-- jQuery autocomplete -->
-    <script src="../../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
-    <!-- starrr -->
-    <script src="../../vendors/starrr/dist/starrr.js"></script>
+    <!-- Datatables -->
+    <script src="../../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
     <!-- Custom Theme Scripts -->
     <script src="../../build/js/custom.min.js"></script>
 
-    <!-- jquery-ui -->
-    <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
-
-    <script type="text/javascript">
-        $('#datepicker').datepicker();
-    </script>
 </body>
 
 </html>
