@@ -11,7 +11,6 @@
     <title>DataTables | Gentelella</title>
 
     <!-- Bootstrap -->
-    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -19,12 +18,19 @@
     <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- Datatables -->
-
-    <link href="../../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../../vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../../build/css/custom.min.css" rel="stylesheet">
+    <link href="../../build/css/custom.css" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -311,17 +317,11 @@
             <div class="right_col" role="main">
                 <form class="form-horizontal form-label-left">
                     <div class="">
-                        <div class="page-title">
-                            <div class="title_left">
-                                <h3>Book Detail</h3>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
                         <div class="row">
-                            <div class="col-md-16 col-sm-16">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="x_panel">
                                     <div class="x_title">
-                                        <h2>Book Detail</h2>
+                                        <h2>Add New Booking</h2>
                                         <ul class="nav navbar-right panel_toolbox">
                                             <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                             </li>
@@ -338,20 +338,155 @@
                                         <div class="clearfix"></div>
                                     </div>
                                     <div class="x_content">
-                                        <p>Book User name: <span style="font-size: 20px; font-weight: bold;">John</span></p>
-                                        <p>Book User Phone: 0123456789</p>
-                                        <p>Book User Number: 0123456789</p>
-                                        <p>Check In: <span style="font-size: 20px; font-weight: bold;">2020-06-26 10h</span></p>
-                                        <p>Check Out: <span style="font-size: 20px; font-weight: bold;">2020-06-29 10h</span></p>
-                                        <p>People Number: 10 people</p>
-                                        <p>Total Amount: <span style="color: red; font-size: 20px; font-weight: bold;">100$</span></p>
-                                        <p>Status: Done</p>
-                                        <p>Memo:</p>
-                                        <p>This blog post shows a few different types of content that’s <br>supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-                                        <div class="ln_solid"></div>
-                                        <div class="form-group">
-                                            <div class="col-md-9 col-sm-9">
-                                                <a href="book_new.html" type="submit" class="btn btn-success">Edit</a>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Hotel<span class="required">*</span></label>
+                                                    <div class="col-md-9 col-sm-9 ">
+                                                        <!-- tùy theo user mà mặc định giá trị khách sạn  -->
+                                                        <select class="form-control">
+                                                            <option>Choose Hotel</option>
+                                                            <option>Hotel 1</option>
+                                                            <option>Hotel 2</option>
+                                                            <option>Hotel 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Book User Name<span class="required">*</span></label>
+                                                    <div class="col-md-9 col-sm-9 ">
+                                                       <input type="text" class="form-control" placeholder="Book User Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Book User Phone<span class="required">*</span></label>
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Book User Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Book User Birthday<span class="required">*</span></label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <input type="text" class="form-control has-feedback" id="single_cal1" placeholder="Ngày thuê">
+                                                   </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Book User Number<span class="required">*</span></label>
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Book User Number">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Check In<span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <input type="text" class="form-control has-feedback" id="single_cal2" placeholder="Check In Date">
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <select class="form-control">
+                                                            <option>Time</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                            <option>13</option>
+                                                            <option>14</option>
+                                                            <option>15</option>
+                                                            <option>16</option>
+                                                            <option>17</option>
+                                                            <option>18</option>
+                                                            <option>19</option>
+                                                            <option>20</option>
+                                                            <option>21</option>
+                                                            <option>22</option>
+                                                            <option>23</option>
+                                                            <option>24</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Check Out<span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <input type="text" class="form-control has-feedback" id="single_cal3" placeholder="Check Out Date">
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <select class="form-control">
+                                                            <option>Time</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                            <option>13</option>
+                                                            <option>14</option>
+                                                            <option>15</option>
+                                                            <option>16</option>
+                                                            <option>17</option>
+                                                            <option>18</option>
+                                                            <option>19</option>
+                                                            <option>20</option>
+                                                            <option>21</option>
+                                                            <option>22</option>
+                                                            <option>23</option>
+                                                            <option>24</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">People Number<span class="required">*</span></label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <input type="text" class="form-control" placeholder="People Number">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Total Amount<span class="required">*</span></label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <input type="text" class="form-control" placeholder="Total Amount">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Status<span class="required">*</span></label>
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <select class="form-control">
+                                                            <option>Choose status</option>
+                                                            <option>Status 1</option>
+                                                            <option>Status 2</option>
+                                                            <option>Status 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="control-label col-md-3 col-sm-3">Memo<span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-9 col-sm-9 ">
+                                                        <textarea class="form-control" rows="4" placeholder="Memo"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="ln_solid"></div>
+                                                <div class="form-group">
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <button type="button" class="btn btn-primary">Cancel</button>
+                                                        <button type="reset" class="btn btn-primary">Reset</button>
+                                                        <button type="submit" class="btn btn-success">Submit</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -382,14 +517,33 @@
     <script src="../../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../../vendors/iCheck/icheck.min.js"></script>
-    <!-- Datatables -->
-    <script src="../../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-
+    <!-- bootstrap-daterangepicker -->
+    <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../../vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="../../build/js/custom.min.js"></script>
+    <script src="../../build/js/custom.js"></script>
 
 </body>
 
